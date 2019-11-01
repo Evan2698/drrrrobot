@@ -141,7 +141,10 @@ def query_timerd_item(timerList):
 
 def main():
     timerlist = fetch_timerd_item()
-    query_timerd_item(timerlist)
+    if len(timerlist) > 0:
+        query_timerd_item(timerlist)
+    else:
+        print("fetch failed!")
     browser.close()
 
 if __name__ == "__main__":
