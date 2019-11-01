@@ -136,14 +136,14 @@ def query_timerd_item(timerList):
 
         time.sleep(2)
         tick = tick + 1
-        print("time is ", tick)  
+        print("time is ", tick)
 
 
+def main():
+    timerlist = fetch_timerd_item()
+    query_timerd_item(timerlist)
+    browser.close()
 
-timerlist = fetch_timerd_item()
-query_timerd_item(timerlist)
-
-browser.close()
-
-
+if __name__ == "__main__":
+    main()
 
