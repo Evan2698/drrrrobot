@@ -52,14 +52,15 @@ def parse_current_talk():
         return Message(0, "", "")
     first = talks[0]
     if first and first.text.find("logged in") > 0:
-        return Message(1, "", first.find_element_by_tag_name("span").text)
+        usr = first.find_element_by_tag_name("span").text
+        return Message(1, usr, usr)
 
     user =  first.find_element_by_xpath("//dt//div[2]//span") 
     msg =  first.find_element_by_xpath("//dd//div//p")
     if user.text and msg.text:
         return Message(2, user.text, msg.text)
     
-    return Message(0, "", msg)
+    return Message(3, "", msg)
 
 def fetch_timerd_item():
     result = []
