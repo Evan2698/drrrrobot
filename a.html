@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      display: block;
+    }
+
+    .container {
+      width: 1200px;
+      padding: 0px;
+      display: block;
+      min-height: 360px;
+      margin: auto;
+      border: green 3px solid;
+    }
+
+    .control-region {
+      display: table;
+      width: 96%;
+      border-collapse: separate;
+      margin: auto;
+      text-align: center;
+
+    }
+
+    .control-row {
+      display: table-row;
+    }
+
+    .select-left {
+      display: table-cell;
+      width: 80px;
+      border-right: 0;
+      padding: 10px 16px;
+      font-size: 18px;
+      border-radius: 6px;
+      background-color: #fcf8e3;
+      border-color: #8a6d3b;
+      white-space: nowrap;
+      vertical-align: middle;
+      line-height: 1.3333333;
+      text-align: center;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      border-style: solid;
+      border-width: 1px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .select-right {
+      display: table-cell;
+      border-color: #8a6d3b;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      height: 46px;
+      line-height: 46px;
+      padding: 10px 16px;
+      font-size: 18px;
+      border-radius: 6px;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      position: relative;
+      z-index: 2;
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-width: 1px;
+    }
+
+    /* .control-btn {
+      background: #c8faca;
+      color: rgb(0, 21, 77);
+      border: #fff 8px;
+      width: 96%;
+      margin: auto;
+    
+      position: relative;
+      border-radius: 6px;
+      padding: 10px 16px;      
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      display: block;
+      margin-top: 10px;
+    }*/
+
+    .control-btn {
+      position: relative;
+      border-radius: 6px;
+      width: 96%;
+      margin: auto;
+      background-color: #4CAF50;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.3333333;
+     
+      font-size: 18px;
+     
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .control-btn1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+      display: block;
+    }
+
+    .control-btn1:hover {
+      background-color: #4CAF50;
+      color: white;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="control-region">
+
+      <div class="control-row">
+        <span class="select-left">切换线路</span>
+
+        <select class="select-right" id="jk">
+          <option value="https://z1.m1907.cn/?jx=">默认线路(腾讯 爱奇艺 优酷 乐视 芒果 搜狐)</option>
+          <option value="EEE://">本站内置解析^_^</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <span class="select-left">播放地址</span>
+        <input class="select-right" type="search" placeholder="电脑使用Ctrl+V粘贴网址-手机直接长按粘贴网址" id="url" autocomplete="off">
+      </div>
+    </div>
+
+    <button id="bf" type="button" class="control-btn control-btn1" onclick="handleClick()">Go-点击开始解析</button>
+
+
+  </div>
+</body>
+
+</html>

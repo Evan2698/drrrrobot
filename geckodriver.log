@@ -1,0 +1,50 @@
+1579701070839	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilef5TGhk"
+1579701079969	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBmwJXl"
+1579701200945	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVRjbAS"
+1579701360016	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefdee03"
+Invalid port. Exiting...
+1579708100656	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebwwK9O"
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x8B000F,name=PServiceWorkerManager::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1579708417988	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewvqQgi"
+1579708460229	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQfkMza"
+1579709044063	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP5eljg"
+1579710949324	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiHNBqA"
+1579711107302	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-profile" "/home/evan/snap/firefox/common/.mozilla/firefox/y6j7nf2k.default" "-foreground" "-no-remote"
+1579711131508	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-profile" "/home/evan/snap/firefox/common/.mozilla/firefox/y6j7nf2k.default" "-foreground" "-no-remote"
+Sandbox: /tmp/.X11-unix/X0 is inaccessible (No such file or directory); can't isolate network namespace in content processes
+1579711223954	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-profile" "/home/evan/snap/firefox/common/.mozilla/firefox/y6j7nf2k.default" "-foreground" "-no-remote"
+Sandbox: /tmp/.X11-unix/X0 is inaccessible (No such file or directory); can't isolate network namespace in content processes
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1579711398762	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "-marionette" "-profile" "/home/evan/snap/firefox/common/.mozilla/firefox/y6j7nf2k.default" "-foreground" "-no-remote"
+Sandbox: /tmp/.X11-unix/X0 is inaccessible (No such file or directory); can't isolate network namespace in content processes
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1612002721087	geckodriver	INFO	Listening on 127.0.0.1:50197
+1612002721091	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4Ae8O2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612002730433	Marionette	INFO	Listening on port 32895
+1612002730471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+Unflushed glGetGraphicsResetStatus: 0x92bb
+JavaScript warning: https://pagead2.googlesyndication.com/bg/AcHtkIhwNIrCTgQ5lPGfhzyPisNq4yamCoQInXE46FE.js line 1 > eval line 781 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1612004007341	Marionette	INFO	Stopped listening on port 32895
+1612053441280	geckodriver	INFO	Listening on 127.0.0.1:35831
+1612053441284	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUpsizq"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612053444028	Marionette	INFO	Listening on port 33905
+1612053444121	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1612109014386	Marionette	INFO	Stopped listening on port 33905
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

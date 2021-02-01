@@ -8,13 +8,13 @@ import time
 import random
 import requests
 
-browser=webdriver.Chrome(executable_path=r'/home/evan/MyApps/webdriver/chromedriver_linux64/chromedriver')
+
 
 room_name = "春暖花开"
 room_desc = "愿你在尘世获得幸福， 我只愿面朝大海，春暖花开"
 USER = "WRU"
 
-
+browser=None
 
 
 class TimerData:
@@ -67,6 +67,7 @@ def fetch_timerd_item():
     try:
         browser.get("https://timerd.me/")
         subs = browser.find_elements_by_class_name("item-content") 
+        print(subs)
         aset = subs[0].find_elements_by_xpath("//div//h1//a")
         for a in aset:
             at = TimerData(a.get_attribute("href"), a.text)
@@ -80,7 +81,7 @@ def ask_question(msg):
     url = 'http://i.itpk.cn/api.php?question=%s'%(msg)
     ret = requests.get(url)
     if ret.status_code == 200:        
-        return ret.text
+        return ret.text.strip(" \t\r\n")
     return "我就是不想回答你～～～."
 
 def query_timerd_item(timerList):
@@ -141,6 +142,9 @@ def query_timerd_item(timerList):
 
 
 def main():
+    print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    global browser   
+    browser=webdriver.Firefox(executable_path=r'/home/evan/MyApps/chromedriver_linux64/geckodriver')
     timerlist = fetch_timerd_item()
     if len(timerlist) > 0:
         query_timerd_item(timerlist)
@@ -150,4 +154,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
