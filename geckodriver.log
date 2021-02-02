@@ -48,3 +48,19 @@ JavaScript warning: https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js, line 2: 
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1612180840206	geckodriver	INFO	Listening on 127.0.0.1:60825
+1612180841140	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6SHUSN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612180845937	Marionette	INFO	Listening on port 45357
+1612180845989	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.bootcss.com/jquery/2.0.2/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Unflushed glGetGraphicsResetStatus: 0x92bb
+JavaScript warning: https://pagead2.googlesyndication.com/bg/GLQYuCCt6m0f0xCxMLPOSBRml7tIRi_BjSJlP4KZB0s.js line 1 > eval line 7093 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* tryNativeGL
+* Exhausted GL driver options.
+1612194228335	Marionette	INFO	Stopped listening on port 45357
+1612270374389	geckodriver	INFO	Listening on 127.0.0.1:38495
+1612270375371	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNOXQrV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612270383556	Marionette	INFO	Listening on port 42119
+1612270383639	Marionette	WARN	TLS certificate errors will be ignored for this session
